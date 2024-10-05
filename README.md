@@ -197,3 +197,22 @@ int main()
       - Call the method `discipline()` using the object `a1`, which will print `"Engineering"`.
       - Access the `university` string variable from the `Uni` class using the `a1` object and concatenate it with the `dept` variable from the Department class.   
       - Print the concatenated result, which will output: `"Symbiosis International University: Electronics & Communication"`.
+### Multiple Inheritance
+1. Class Definition: `Vehicle`   
+   - Define a class `Vehicle` with:
+      - A public string variable `company`, initialized to `"Ford"`.
+      - A public method `type()` that prints `"Mustang"`.   
+2. Class Definition: `Specs`   
+   - Define a class `Specs` with:   
+      - A public string variable `mileage`, initialized to `"8 kmpl"`.   
+      - A public method `colour()` that prints `"Grey and Black"`.   
+3. Class Definition: `Car` (Child Class)   
+   - Define a class `Car` that inherits publicly from both `Vehicle` and `Specs` (demonstrating multiple inheritance).   
+   - In this class, define a public string variable `seater`, initialized to `"4 seater"`.   
+4. Main Function:   
+   - Create an object `f1` of the class `Car`.
+   - Call the `colour()` method using the object `f1`, which prints `"Grey and Black"`.   
+   - Access and print the `company` string variable from the `Vehicle` class using the `f1` object, which will output `"Ford"`.   
+   - Call the `type()` method from the `Vehicle` class, which prints `"Mustang"`.   
+   - Access and print the `seater` string variable from the `Car` class, concatenating it in the form `"(4 seater)"`.   
+   - Access and print the `mileage` string variable from the `Specs` class, which outputs `"MILEAGE: 8 kmpl"`.   
